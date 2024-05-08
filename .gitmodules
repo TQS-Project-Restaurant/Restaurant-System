@@ -1,0 +1,9 @@
+[submodule "API-SpringB"]
+	path = API-SpringB
+	url = git@github.com:TQS-Project-Restaurant/API-SringB.git
+[submodule "S-C-DS-Nextjs"]
+	path = S-C-DS-Nextjs
+	url = git@github.com:TQS-Project-Restaurant/S-C-DS-Nextjs.git
+[submodule "G-M-APP"]
+	path = G-M-APP
+	url = git@github.com:TQS-Project-Restaurant/G-M-APP.git
