@@ -1,0 +1,3 @@
+[submodule "API-SpringB"]
+	path = API-SpringB
+	url = git@github.com:TQS-Project-Restaurant/API-SringB.git
