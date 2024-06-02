@@ -1,0 +1,55 @@
+services:
+
+  api:
+    container_name: api
+    depends_on:
+      - postgres
+    build:
+      context: ./API-SpringB
+      dockerfile: .docker/Dockerfile
+    volumes:
+     - ./API-SpringB:/app
+     - ./API-SpringB/.m2:/root/.m2
+    working_dir: /app
+    command: sh run.sh
+    ports:
+      - 8080:8080
+      - 35729:35729
+      - 5005:5005
+
+  postgres:
+    container_name: restaurant-db
+    image: postgres:latest
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    env_file:
+      - ./API-SpringB/credentials.env
+
+  frontend-nextjs:
+    container_name: FRONTEND-NEXTJS
+    restart: unless-stopped
+    env_file:
+      - prod.env
+    build:
+      context: ./S-C-DS-Nextjs
+      dockerfile: .docker/Dockerfile.prod
+      args:
+        - NEXT_PUBLIC_IP_ADDRESS=http://localhost
+    volumes:
+        - ./S-C-DS-Nextjs/app:/app
+        - /app/node_modules
+        - /app/.next
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: .docker/Dockerfile
+    ports:
+      - '80:80'
+    depends_on:
+      - frontend-nextjs
