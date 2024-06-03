@@ -1,0 +1,30 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Stop current Docker containers
+      run: docker-compose -f docker-compose.prod.yml stop
+
+    - name: Pull latest changes and update the submodules
+      run: |
+        git pull
+        git submodule update --init --recursive
+        git submodule update --remote --recursive
+
+    - name: Replace placeholder with actual URL
+      run: sed -i "s|NEXT_PUBLIC_IP_ADDRESS=.*|NEXT_PUBLIC_IP_ADDRESS=${{ secrets.URL }}|g" docker-compose.prod.yml
+
+    - name: Build and run Docker containers
+      run: docker-compose -f docker-compose.prod.yml up --build
