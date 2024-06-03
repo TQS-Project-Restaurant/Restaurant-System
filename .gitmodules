@@ -1,9 +1,12 @@
 [submodule "API-SpringB"]
 	path = API-SpringB
-	url = git@github.com:TQS-Project-Restaurant/API-SringB.git
+	url = https://github.com/TQS-Project-Restaurant/API-SringB.git
+	branch = main
 [submodule "S-C-DS-Nextjs"]
 	path = S-C-DS-Nextjs
-	url = git@github.com:TQS-Project-Restaurant/S-C-DS-Nextjs.git
+	url = https://github.com/TQS-Project-Restaurant/S-C-DS-Nextjs.git
+	branch = main
 [submodule "G-M-APP"]
 	path = G-M-APP
-	url = git@github.com:TQS-Project-Restaurant/G-M-APP.git
+	url = https://github.com/TQS-Project-Restaurant/G-M-APP.git
+	branch = main
