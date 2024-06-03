@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Stop current Docker containers
-      run: docker-compose -f docker-compose.prod.yml stop
+      run: docker compose -f docker-compose.prod.yml stop
 
     - name: Update prod.env with GitHub Secrets
       run: |
@@ -32,4 +32,4 @@ jobs:
       run: sed -i "s|NEXT_PUBLIC_IP_ADDRESS=.*|NEXT_PUBLIC_IP_ADDRESS=http://${{ secrets.URL }}|g" docker-compose.prod.yml
 
     - name: Build and run Docker containers
-      run: docker-compose -f docker-compose.prod.yml up --build
+      run: docker compose -f docker-compose.prod.yml up --build
