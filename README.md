@@ -29,3 +29,13 @@ Our product is called Restaurante Moles Ovos and aims to make communication betw
 [Backend Workflows](https://github.com/TQS-Project-Restaurant/API-SpringB/actions)
 
 [Web Frontend Workflows](https://github.com/TQS-Project-Restaurant/S-C-DS-Nextjs/actions)
+
+## Credentials
+
+**User** - `user@gmail.com` `user`
+
+**Kitchen** - `kitchen@gmail.com` `kitchen`
+
+**Waiter** - `waiter@gmail.com` `waiter`
+
+**MISSING APK INSTRUCTIONS**
