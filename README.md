@@ -12,7 +12,7 @@ Our product is called Restaurante Moles Ovos and aims to make communication betw
 
 > Pedro Pinho 109986 - DevOps and Developer
 
-> Tomás victal 109018 - Team Manager, ? and Developer  
+> Tomás victal 109018 - Team Manager, Product Owner and Developer  
 
 ## Bookmarks
 
