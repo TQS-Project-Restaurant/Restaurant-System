@@ -1,5 +1,9 @@
 # TQS Full-Stack Project (Restaurant)
 
+## Using the system
+
+The website can be found at http://deti-tqs-01.ua.pt. For credentials check below. To use the waiter part of the system ou need to download the apk [here](https://github.com/TQS-Project-Restaurant/G-M-APP/actions/runs/9356504457).
+
 ## Abstract
 
 The main objective of this project is to familiarize us with having a defined team and project structure, where the features are divided into different user stories and are assigned to different team members. With this we cultivate knowledge of working as a team while keeping an organized backlog. Not only that but also integration of QA and CI/CD methods that allow us to seamlessly have continuous integration and deployment.
@@ -26,9 +30,11 @@ Our product is called Restaurante Moles Ovos and aims to make communication betw
 
 [SonarCloud Backend](https://sonarcloud.io/summary/overall?id=TQS-Project-Restaurant_API-SpringB)
 
-[Backend Workflows](https://github.com/TQS-Project-Restaurant/API-SpringB/actions)
-
 [Web Frontend Workflows](https://github.com/TQS-Project-Restaurant/S-C-DS-Nextjs/actions)
+
+[Mobile Frontend Workflows](https://github.com/TQS-Project-Restaurant/G-M-APP/actions)
+
+[Backend Workflows](https://github.com/TQS-Project-Restaurant/API-SpringB/actions)
 
 ## Credentials
 
@@ -37,5 +43,3 @@ Our product is called Restaurante Moles Ovos and aims to make communication betw
 **Kitchen** - `kitchen@gmail.com` `kitchen`
 
 **Waiter** - `waiter@gmail.com` `waiter`
-
-**MISSING APK INSTRUCTIONS**
