@@ -17,6 +17,11 @@ jobs:
     - name: Stop current Docker containers
       run: docker-compose -f docker-compose.prod.yml stop
 
+    - name: Update prod.env with GitHub Secrets
+      run: |
+        sed -i "s/NEXTAUTH_SECRET=.*/NEXTAUTH_SECRET=${{ secrets.NEXTAUTH_SECRET }}/g" prod.env
+        sed -i "s/POSTGRES_PASSWORD=.*/POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}/g" prod.env
+
     - name: Pull latest changes and update the submodules
       run: |
         git pull
