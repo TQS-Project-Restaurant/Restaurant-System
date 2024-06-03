@@ -24,7 +24,7 @@ services:
     ports:
       - 5432:5432
     env_file:
-      - ./API-SpringB/credentials.env
+      - prod.env
 
   frontend-nextjs:
     container_name: FRONTEND-NEXTJS
