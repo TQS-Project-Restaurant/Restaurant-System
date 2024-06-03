@@ -16,6 +16,8 @@ services:
       - 8080:8080
       - 35729:35729
       - 5005:5005
+    env_file:
+      - prod.env
 
   postgres:
     container_name: restaurant-db

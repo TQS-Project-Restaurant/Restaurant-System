@@ -16,6 +16,8 @@ services:
       - 8080:8080
       - 35729:35729
       - 5005:5005
+    env_file:
+      - dev.env
 
   postgres:
     container_name: restaurant-db
@@ -24,7 +26,7 @@ services:
     ports:
       - 5432:5432
     env_file:
-      - ./API-SpringB/credentials.env
+      - dev.env
 
   frontend-nextjs:
     container_name: FRONTEND-NEXTJS
