@@ -2,7 +2,7 @@
 
 ## Using the system
 
-The website can be found at http://deti-tqs-01.ua.pt. For credentials check below. To use the waiter part of the system ou need to download the apk [here](https://github.com/TQS-Project-Restaurant/G-M-APP/actions/runs/9356504457).
+The website can be found at http://deti-tqs-01.ua.pt. For credentials check below. To use the waiter part of the system an apk is required, it can be found [here](https://github.com/TQS-Project-Restaurant/G-M-APP/actions/runs/9356504457).
 
 ## Abstract
 
