@@ -2,9 +2,9 @@
 
 ## Abstract
 
-// TODO
+The main objective of this project is to familiarize us with having a defined team and project structure, where the features are divided into different user stories and are assigned to different team members. With this we cultivate knowledge of working as a team while keeping an organized backlog. Not only that but also integration of QA and CI/CD methods that allow us to seamlessly have continuous integration and deployment.
 
-title and concise description of the project
+Our product is called Restaurante Moles Ovos and aims to make communication between restaurant staff easier while also providing customers with information and booking options.
 
 ## Team
 
@@ -16,46 +16,16 @@ title and concise description of the project
 
 ## Bookmarks
 
-// TODO
+[Jira](https://tqsprojectrestaurant.atlassian.net/jira/software/projects/RMO/boards/2)
 
-**link all relevant resources here!**
+[API Documentation (requires UA network)](http://deti-tqs-01.ua.pt/swagger-ui/index.html)
 
-- Project Backlog (e.g.: JIRA, GitLab agile planning)
-- Related repositories (there may be other related code repositories...)
-- Related workspaces in a cloud drives, if applicable (e.g.: shared Google Drive)
-- API documentation (link the landing page for your API documentation)
-- Static analysis (quick access to the quality dashboard)
-- CI/CD environment (quick access to the results dashboard)
-- ...
+[SonarCloud Web Frontend](https://sonarcloud.io/project/overview?id=TQS-Project-Restaurant_S-C-DS-Nextjs)
 
-## Features
-### Customer Frontend:
+[SonarCloud Mobile Frontend](https://sonarcloud.io/project/overview?id=TQS-Project-Restaurant_G-M-APP)
 
-// TODO
+[SonarCloud Backend](https://sonarcloud.io/summary/overall?id=TQS-Project-Restaurant_API-SpringB)
 
-### Staff Frontend:
+[Backend Workflows](https://github.com/TQS-Project-Restaurant/API-SpringB/actions)
 
-// TODO
-
-### Backend:
-
-// TODO
-
-### Technologies Used:
-
-    Frontend: Next.js, Tailwind, daisyUI
-    Backend: Spring Boot
-    Database: PostgreSQL
-    Analysis: Sonarcloud
-    Deployment: Nginx
-    CI:
-
-## Setting up and running locally:
-
-### Setup:
-
-    git clone https://github.com/TQS-Project-Restaurant/Restaurant-System.git
-
-### Run:
-
-    docker-compose up --build
+[Web Frontend Workflows](https://github.com/TQS-Project-Restaurant/S-C-DS-Nextjs/actions)
